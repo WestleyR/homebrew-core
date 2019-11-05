@@ -1,4 +1,4 @@
-class ListFiles < Formula
+class Pac < Formula
   desc "print some files"
   homepage ""
   url "https://github.com/WestleyR/pac/archive/v1.0.0.tar.gz"
