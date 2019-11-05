@@ -1,8 +1,8 @@
 class ListFiles < Formula
   desc "list some files"
   homepage ""
-  url "https://github.com/WestleyR/list-files/archive/v1.0.2.tar.gz"
-  sha256 "cdea8a86da5f2c37efa210ed63547aa169151cec277ed8f0604dccf374c972a2"
+  url "https://github.com/WestleyR/list-files/archive/v1.1.0.tar.gz"
+  sha256 "6c3b1d50ab74319d209819dca6c098776e6b5640b655d4adbe0dc9bb9b196edf"
 
   bottle do
     cellar :any
@@ -16,8 +16,6 @@ class ListFiles < Formula
   end
 
   def install
-    system "make"
-    system "mkdir", "-p","#{prefix}/bin"
-    system "cp", "-f", "lf", "#{prefix}/bin/lf"
+    system "make", "install"
   end
 end
