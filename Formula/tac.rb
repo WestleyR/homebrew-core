@@ -7,7 +7,7 @@ class Tac < Formula
   # depends_on "cmake" => :build
 
   def install
-    system "make", "install", "--prefix=#{prefix}"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
