@@ -7,7 +7,7 @@ class Tac < Formula
   bottle do
     cellar :any
     rebuild 1
-    # TODO: add precompiled
+    sha256 "934ea95b83935f97a85d5521f5a594be13b717836de2312ebbef7b7631b30c09" => :catalina
   end
 
   head do
