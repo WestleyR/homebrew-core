@@ -1,4 +1,4 @@
-class CleanScreen < Formula
+class ClearScreen < Formula
   desc "Clear your terminal screen"
   homepage "https://github.com/WestleyR/clean-screen"
   url "https://github.com/WestleyR/clean-screen/archive/v1.0.0.tar.gz"
