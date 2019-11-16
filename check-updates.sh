@@ -21,6 +21,13 @@ for f in $(ls Formula); do
   username=`echo "$url" | cut -f 4 -d '/'`
   packagename=`echo "$url" | cut -f 5 -d '/'`
 
+  if [ -z $username ] || [ -z $packagename ]; then
+    echo -e -n "${color_red}ERROR:${color_reset} "
+    echo "cant check version for ${f}"
+    echo
+    continue
+  fi
+
   latest_version=`curl -s https://api.github.com/repos/$username/$packagename/releases/latest | jq .tag_name | tr -d '"'`
   if [[ $latest_version = "null" ]]; then
     echo "github api not working..."

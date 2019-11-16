@@ -1,8 +1,8 @@
 class ListFiles < Formula
   desc "list some files"
   homepage ""
-  url "https://github.com/WestleyR/list-files/archive/v1.1.0.tar.gz"
-  sha256 "6c3b1d50ab74319d209819dca6c098776e6b5640b655d4adbe0dc9bb9b196edf"
+  url "https://github.com/WestleyR/list-files/archive/v1.2.0.tar.gz"
+  sha256 "234e076969a3f85b22629b268ac3450f41ad4889ccb1d8535722807e5714cb81"
 
   bottle do
     cellar :any
